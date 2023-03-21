@@ -25,6 +25,8 @@ public class Salarie {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.email = email;
+		
+		//commentaire
 	}
 	
 	
