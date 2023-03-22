@@ -29,6 +29,7 @@ public class Entreprise {
 		this.nom = nom;
 		this.adresse = adresse;
 		
+		//com
 		
 	}
 	
