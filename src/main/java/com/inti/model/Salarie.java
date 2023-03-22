@@ -9,6 +9,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode.Exclude;
 import lombok.NoArgsConstructor;
 
 @Entity @Table
@@ -22,6 +23,7 @@ public class Salarie {
 	private String prenom;
 	private String email;
 	
+	@Exclude
 	@ManyToOne @JoinColumn(name="id_entreprise")
 	private Entreprise entreprise;
 	

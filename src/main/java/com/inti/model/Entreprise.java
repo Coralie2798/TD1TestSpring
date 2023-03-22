@@ -10,6 +10,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode.Exclude;
 import lombok.NoArgsConstructor;
 
 @Entity @Table
@@ -21,6 +22,7 @@ public class Entreprise {
 	private String nom;
 	private String adresse;
 	
+	@Exclude
 	@OneToMany (mappedBy = "entreprise")
 	private List<Salarie> listeS;
 	
@@ -29,7 +31,7 @@ public class Entreprise {
 		this.nom = nom;
 		this.adresse = adresse;
 		
-		//com
+		
 		
 	}
 	
