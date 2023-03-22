@@ -28,7 +28,7 @@ public class Salarie {
 		
 		
 		
-		//un autre commentaire
+		
 	}
 	
 	
